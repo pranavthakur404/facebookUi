@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    
+}
+.main{
+     width: 100vw;
+     height: 100vh;
+     background: #F0F2F5;
+     overflow: auto;
+     font-family: 'Roboto', sans-serif;
+     
+}
+
+.main .two-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+.main .two-section .intro{
+    width: 48%;
+    padding: 0px;
+}
+.main .two-section .intro h1{
+    color: #1877F2;
+    font-size: 7rem;
+    margin-top: 50px;
+}
+.main .two-section .intro p{
+    font-size: 3rem;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* form section start */
+.main .two-section .form{
+    width: 40%;
+}
+.main .two-section .form .form-inner{
+     padding: 20px;
+     background: #ffff;
+     border-radius: 10px;
+     box-shadow: 0px 5px 7px 0px gray;
+}
+::placeholder{
+    color: silver;
+}
+.main .two-section .form .form-inner input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.8rem;
+    border: 1px solid silver;
+    color:grey;
+    border-radius: 10px;
+    outline:none ;
+}
+.main .two-section .form .form-inner input:focus{
+    box-shadow: 0px 2px 4px 0px #79acee;
+}
+
+
+.main .two-section .form .form-inner .password{
+    margin-top: 20px;
+}
+.main .two-section .form .form-inner .login{
+    width: 100%;
+    margin-top: 20px;
+    color:#ffff;
+    background: #1877F2;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.main .two-section .form .form-inner h5{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #1877F2;
+    text-align: center;
+    margin-top: 20px;
+}
+.main .two-section .form .form-inner hr{
+    border: none;
+    height: 1px;
+    background: rgb(224, 224, 224);
+    width: 100%;
+    margin: 20px 0px;
+}
+.main .two-section .form .form-inner .singnup{
+    width: 50%;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size:1.5rem ;
+    font-weight: 700;
+    color: #ffff;
+    background: #36A420;
+    border-radius: 10px;
+}
+.main .two-section .form p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* media query start */
+@media only screen and (max-width:768px){
+    
+    .main .two-section .box{
+        width: 100%;
+        text-align: center;
+    }
+    .main .two-section .form{
+        margin-top: 50px;
+    }
+
+}
